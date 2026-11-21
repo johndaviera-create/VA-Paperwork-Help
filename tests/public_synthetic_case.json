@@ -1,0 +1,19 @@
+{
+  "case_key": "SYNTHETIC-CASE-A",
+  "documents": [
+    {"id": "D-older", "case_key": "SYNTHETIC-CASE-A", "pages": 3},
+    {"id": "D-newer", "case_key": "SYNTHETIC-CASE-A", "pages": 4},
+    {"id": "D-note", "case_key": "SYNTHETIC-CASE-A", "pages": 2},
+    {"id": "D-other", "case_key": "UNRELATED-SYNTHETIC-CASE-B", "pages": 3}
+  ],
+  "facts": [
+    {"id": "F-rash", "document_id": "D-note", "issue": "skin_condition", "page": 1, "date": "2026-04-06", "provenance": "clinical_note", "direction": "supports", "text": "Synthetic clinician noted eczema with no opinion about relationship to service"},
+    {"id": "F-followup", "document_id": "D-note", "issue": "skin_condition", "page": 2, "date": "2026-04-06", "provenance": "clinical_note", "direction": "neutral", "text": "Synthetic follow-up does not document duration or severity of a separate skin flare"}
+  ],
+  "decisions": [
+    {"document_id": "D-older", "issue": "shoulder_strain", "page": 1, "date": "2025-01-01", "status": "denied", "rating": null},
+    {"document_id": "D-newer", "issue": "shoulder_strain", "page": 2, "date": "2026-02-01", "status": "granted", "rating": 10, "effective_date": "2025-01-01"},
+    {"document_id": "D-newer", "issue": "skin_condition", "page": 3, "date": "2026-02-01", "status": "denied", "rating": null}
+  ],
+  "rating_comparisons": []
+}
