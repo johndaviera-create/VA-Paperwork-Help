@@ -1,0 +1,30 @@
+# Do not commit personal records, model logs, runtime artifacts or secrets.
+.env
+.env.*
+*.pem
+*.key
+**/__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+.DS_Store
+medical-records/
+veteran-records/
+private/
+local-data/
+uploads/
+# Deny common medical-record export formats; use synthetic text/JSON only in tests.
+*.pdf
+*.docx
+*.doc
+*.jpg
+*.jpeg
+*.png
+*.tiff
+*.tif
+*.heic
+*.zip
+private-case-ledger*.json
+*.private.json
+local-reports/
+case-exports/
